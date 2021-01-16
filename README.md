@@ -2,9 +2,9 @@
 
 ## User Story 
 
-AS AN authenticated user 
-I WANT to find the closest restaurants to my current location
-SO THAT the user can choose an option that meets user criteria 
+* AS AN authenticated user 
+* I WANT to find the closest restaurants to my current location
+* SO THAT the user can choose an option that meets user criteria 
 
 ## Acceptance Criteria 
 
@@ -19,7 +19,9 @@ SO THAT the user can choose an option that meets user criteria
 * THEN I am presented with the current temperature, wind, precipitation percentage and cloud condition
 
 The following image demonstrates the application functionality: 
-![food-search-gp](./assets/Screenshot (20).png)
+<img width="1194" alt="GP-1-Flow Screenshot" src="https://user-images.githubusercontent.com/74476090/104820741-9948eb00-57fc-11eb-8220-e146f4a2c2a5.png">
+
 
 The following image displays the application wireframe: 
-![food-search-gp](./assets/GP-1-Flow Screenshot.png)
+![Screenshot (20)](https://user-images.githubusercontent.com/74476090/104820754-b382c900-57fc-11eb-8ba1-cb5f528263ad.png)
+
