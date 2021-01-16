@@ -18,6 +18,8 @@
 * WHEN I view the current weather conditions for tha t city 
 * THEN I am presented with the current temperature, wind, precipitation percentage and cloud condition
 
+## Images 
+
 The following image demonstrates the application functionality: 
 <img width="1194" alt="GP-1-Flow Screenshot" src="https://user-images.githubusercontent.com/74476090/104820741-9948eb00-57fc-11eb-8220-e146f4a2c2a5.png">
 
