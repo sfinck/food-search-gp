@@ -27,3 +27,7 @@ The following image demonstrates the application functionality:
 The following image displays the application wireframe: 
 ![Screenshot (20)](https://user-images.githubusercontent.com/74476090/104820754-b382c900-57fc-11eb-8ba1-cb5f528263ad.png)
 
+APIs:
+https://developers.zomato.com/
+
+https://openweathermap.org/api
