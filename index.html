@@ -1,77 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <link rel ="stylesheet" href= "style.css">
+
+  <title>Document</title>
 </head>
+<body class = "grey lighten-5">
+  
+<!--header-->
 
-<body>
-    <!-- <div class="container"> -->
-    <nav>
-        <!-- <h1>Search a Restaurant Near You!</h1> -->
-        <div class="nav-wrapper">
-            <div class="brand-logo center">Find a Restaurant Near you!</div>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <!-- <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li> -->
-            </ul>
-        </div>
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="input_text" type="text" data-length="10">
-                        <label for="input_text">Input text</label>
-                    </div>
-                </div>
-                <a class="waves-effect waves-light btn-large left">Button</a>
-    </nav>
-    <!-- <nav>
-        <div class="nav-wrapper">
-            <form>
-                <div class="input-field">
-                    <input id="zipcode" type="search" placeholder="Enter your zipcode here">
-                    <label class="label-icon" for="search"><i class="material-icons"></i></label> -->
-    <!-- <i class="material-icons">search</i>
-                </div>
-            </form>
-        </div>
-    </nav> -->
-    <main>
-        <div>
-            <h5 id="mainContent">View your results here:</h5>
-            <ul>
-            </ul>
-        </div>
-    </main>
-    <!--Insert footer here-->
-    <footer class="page-footer" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text" id="currentCity">Your Weather:</h5>
-                    <img src="./assets/weather-forecast.jpg" id="weather-image" alt="weather-picture">
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <ul>
-                        <li><a class="grey-text text-lighten-3">Temperature: </a></li>
-                        <li><a class="grey-text text-lighten-3">Precpitation: </a></li>
-                        <li><a class="grey-text text-lighten-3">Wind: </a></li>
-                        <li><a class="grey-text text-lighten-3">Cloud Conditions: </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<nav>
+  <div class = "nav-extended navbar-fixed col s12 red darken-1">
+  <div class="nav-wrapper">
+    <h3 class="brand-logo center cols12">Restaurant Search</h3>
+    <br> 
+
+<!--search bar-->
+
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12 red darken-1">
+        <input placeholder = "Enter your city here to search" id="input_text" type="text" data-length="10">
+        <label for="input_text" > </label>
+      </div>
+    </div>
+
+</div>
+</nav>
+
+<!--main section/search results-->
+
+<main class = "container">
+  <br> <br>
+<h5 class = center>Search Results</h5>
+
+<ul>
+
+
+</ul>
+
+
+</main>
+
+  
+
+
+
+<footer class="page-footer grey lighten-2">
+  <div class="container">
+    <div class="row">
+      <div class="col l4 offset-l2 s12">
+        <h5 class="text-darken-3 left" id="currentCity">Your Weather:</h5>
+        <img class = "responsive-img" src="./assets/weather-forecast.jpg" id="weather-image" alt="weather-picture">
+    </div>
+    <div class="col l4 offset-l2 s12">
+        <ul>
+            <li><a class="grey-text text-darken-3">Temperature: </a></li>
+            <li><a class="grey-text text-darken-3">Precpitation: </a></li>
+            <li><a class="grey-text text-darken-3">Wind: </a></li>
+            <li><a class="grey-text text-darken-3">Cloud Conditions: </a></li>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 </body>
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="./script.js"></script>
-
 </html>
