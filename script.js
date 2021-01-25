@@ -1,7 +1,7 @@
 $(document).ready(function () {
 // api call for restaurants by city, state
   var queryUrl = "https://developers.zomato.com/api/v2.1/search?entity_type=city&q=kansas%20city%2C%20missouri";
-  // var city = $('')
+  // var city = $('').value;
   $.ajax({
     method: "GET",
     url: queryUrl,
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     // api call for weather for city
     const apiKey = "&appid=3e560cf76997f959e63ea4f02f69aca9&units=imperial";
-    // var city2 = document.getElementById('input html element here').value;
+    // var city = $('').value;
     var queryURL2 =
     "https://api.openweathermap.org/data/2.5/weather?q=kansas city" + apiKey;
   $.ajax({
