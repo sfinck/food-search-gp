@@ -24,16 +24,17 @@
 <!--search bar-->
 
 
-<div class="row">
-  <form class="col s12">
+<div class="row container-fluid">
+  <!-- <form class="col s12"> -->
     <div class="row">
       <div class="input-field col s12 red darken-1">
-        <input placeholder = "Enter your city here to search" id="input_text" type="text" data-length="10">
-        <label for="input_text" > </label>
+        <input placeholder = "Enter your city here to search" id="input_text" type="text" data-length="10" class="inputEl">
+        <button id="search-button"></button>
+        <label for="input_text" ></label>
       </div>
     </div>
 
-
+  <!-- </form> -->
 </div>
 </nav>
 
@@ -65,10 +66,10 @@
     </div>
     <div class="col l4 offset-l2 s12">
         <ul>
-            <li><a class="grey-text text-darken-3">Temperature: </a></li>
-            <li><a class="grey-text text-darken-3">Precpitation: </a></li>
-            <li><a class="grey-text text-darken-3">Wind: </a></li>
-            <li><a class="grey-text text-darken-3">Cloud Conditions: </a></li>
+            <li><a class="grey-text text-darken-3" id="tempEl">Temperature: </a></li>
+            <li><a class="grey-text text-darken-3" id="precEl">Precpitation: </a></li>
+            <li><a class="grey-text text-darken-3" id="windEl">Wind: </a></li>
+            <li><a class="grey-text text-darken-3" id="cloudEl">Cloud Conditions: </a></li>
       </div>
     </div>
   </div>

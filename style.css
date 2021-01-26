@@ -18,3 +18,7 @@
 main {
   background-image:"./assets/food-image.jpg";
 }
+
+.inputEl {
+  width: auto !important;
+}
