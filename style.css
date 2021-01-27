@@ -1,24 +1,40 @@
-
+#nav {
+  font-family: 'Hachi Maru Pop', cursive, sans-serif;
+  background-color: orangered;
+}
+  
   body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background: url('Assets/food-image.jpg') no-repeat center;
+    font-family: Arial, Helvetica, sans-serif;
+  
   }
 
   main {
     flex: 1 0 auto;
+    text-align: center;
+  }
+
+  .card{
+    border: solid;
+    border-color: black;
   }
 
   #weather-image {
-    width:300px;
-    height:150px; 
+    max-width: 200px;
+    max-height:150px; 
 }
 
-
-main {
-  background-image:"./assets/food-image.jpg";
+#footer {
+  background-color: orangered;
 }
 
-.inputEl {
-  width: auto !important;
+#borderimg {
+  border-image-slice: 30%;
+}
+
+#input_text {
+  font-family: 'Hachi Maru Pop', cursive, sans-serif;
 }

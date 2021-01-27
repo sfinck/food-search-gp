@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var city = document.getElementById('input_text').value;
   var searchButton = $('#search-button')
+  
   searchButton.on('click', function(){
   
 // api call for city
@@ -16,16 +17,76 @@ $(document).ready(function () {
     },
     success: function (response) {
       console.log(response);
-      console.log(response.location_suggestions[0].name)
-      console.log(response.location_suggestions[1].name)
-      console.log(response.location_suggestions[2].name)
+      var btnText1 = response.location_suggestions[0].name
+      var btnText2 = response.location_suggestions[1].name
+      var btnText3 = response.location_suggestions[2].name
 
-      $('<button/>')
-     
+      document.getElementById('button1').innerHTML = btnText1;
+      document.getElementById('button2').innerHTML = btnText2;
+      document.getElementById('button3').innerHTML = btnText3;
 
-      for (i = 0; i < response.restaurants.length; i++) {
-          // console.log(response.restaurants[i])
-      }
+      var btn1 = document.getElementById('button1')
+      var btn2 = document.getElementById('button2')
+      var btn3 = document.getElementById('button3')
+
+      btn1.addEventListener('click', function(){
+        
+        var id1 = response.location_suggestions[0].id
+        var queryURL3 = 'https://developers.zomato.com/api/v2.1/search?entity_id=' + id1 + '&entity_type=city&count=3';
+        $.ajax({
+          method: 'GET', 
+          url: queryURL3,
+          headers: {
+            "user-key": "050c9a1147aff519042c287b16c3590d",
+            "content-type": "application/json",
+          },
+          success: function (response3) {
+            console.log(response3);
+
+            
+          }
+        })
+      
+      })
+
+      btn2.addEventListener('click', function(){
+        
+        var id2 = response.location_suggestions[1].id
+        var queryURL3 = 'https://developers.zomato.com/api/v2.1/search?entity_id=' + id2 + '&entity_type=city&count=3';
+        $.ajax({
+          method: 'GET', 
+          url: queryURL3,
+          headers: {
+            "user-key": "050c9a1147aff519042c287b16c3590d",
+            "content-type": "application/json",
+          },
+          success: function (response3) {
+            console.log(response3);
+            
+          }
+        })
+      
+      })
+
+      btn3.addEventListener('click', function(){
+      
+        var id3 = response.location_suggestions[2].id
+        var queryURL3 = 'https://developers.zomato.com/api/v2.1/search?entity_id=' + id3 + '&entity_type=city&count=3';
+        $.ajax({
+          method: 'GET', 
+          url: queryURL3,
+          headers: {
+            "user-key": "050c9a1147aff519042c287b16c3590d",
+            "content-type": "application/json",
+          },
+          success: function (response3) {
+            console.log(response3);
+            
+          }
+        })
+      
+      })
+
     },
   });
 
@@ -38,7 +99,7 @@ $(document).ready(function () {
     method: "GET",
     url: queryURL2,
     success: function (response2) {
-      // console.log(response2);
+      console.log(response2);
       // console.log(response2.main.temp)
       // console.log(response2.weather[0].description)
       $('#tempEl').text('Temperature: ' + response2.main.temp)
@@ -61,3 +122,5 @@ $(document).ready(function () {
 });
 
 // create three buttons, grab names from api call, attatch event handlers for each button and when one is clicked it will do a api call for the city by the id
+
+// adding 'Did you mean?:' to the buttons div??
