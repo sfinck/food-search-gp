@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,7 +11,6 @@
 </head>
 
 <body class="grey lighten-5">
-
 
 
  
@@ -31,24 +30,29 @@
       <form class="col s12">
         <div class="row">
           <div class="input-field">
-            <input id="input_text" type="text" placeholder="Enter Zipcode" data-length="10">
+            <input id="input_text" type="text" placeholder="Enter city and state" data-length="10">
             <a class="btn-floating btn-large waves-effect waves-light green" id="search-button"><i class="material-icons">GO!</i></a>
           </div>
         </div>
  <!--main section/search results-->
         <div class="container" id="buttonDiv">
-          <button id="button1" type="button">as</button>
-          <button id="button2" type="button">as</button>
-          <button id="button3" type="button">as</button>
+          <button class = "hidden" id="button1" type="button">as</button>
+          <button class = "hidden" id="button2" type="button">as</button>
+          <button class = "hidden" id="button3" type="button">as</button>
         </div>
 
         <h5 class=center id="resultsHeader"></h5>
-        <ul>
+        
           <div class="row">
-            <div class="card col s4 offset-s4" id="res 1">
+            <div class="hidden card col s4 offset-s4" id="res 1">
               <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <!-- <span class="card-title"></span> -->
+                <h6 id = "result1"></h6>
+                <p>URL: 
+                  Address:
+                </p>
+
+
+                 <span class="card-title"></span>
               </div>
               <div class="card-content">
                 <p></p>
@@ -56,7 +60,39 @@
             </div>
           </div>
     </div>
-    </ul>
+
+    <div class="row">
+      <div class="hidden card col s4 offset-s4" id="res 1">
+        <div class="card-image">
+          <h6 id = "result2"></h6>
+          <p>URL:
+            Address:
+          </p>
+           <span class="card-title"></span>
+        </div>
+        <div class="card-content">
+         
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="hidden card col s4 offset-s4" id="res 1">
+    <div class="card-image">
+      <h6 id = "result3"></h6>
+      <p>URL:
+        Address:
+      </p>
+       <span class="card-title"></span>
+    </div>
+    <div class="card-content">
+      <p></p>
+    </div>
+  </div>
+</div>
+</div>
+    
 
   </main>
 
@@ -79,7 +115,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
