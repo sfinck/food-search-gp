@@ -3,32 +3,34 @@
   background-color: orangered;
 }
   
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background: url('Assets/food-image.jpg') no-repeat center;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url('Assets/food-image.jpg') no-repeat center;
+  font-family: Arial, Helvetica, sans-serif;
   
-  }
+}
 
-  main {
-    flex: 1 0 auto;
-    text-align: center;
-  }
+main {
+  flex: 1 0 auto;
+  text-align: center;
+}
 
-  .card{
-    border: solid;
-    border-color: black;
-  }
+.card{
+  border: solid;
+  border-color: black;
+}
 
-  #weather-image {
-    max-width: 200px;
-    max-height:150px; 
+#weather-image {
+  max-width: 100px;
+  max-height: 75px;
+   
 }
 
 #footer {
   background-color: orangered;
+  font-family: 'Hachi Maru Pop', cursive, sans-serif;
 }
 
 #borderimg {
