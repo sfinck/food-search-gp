@@ -38,3 +38,7 @@
 #input_text {
   font-family: 'Hachi Maru Pop', cursive, sans-serif;
 }
+
+.hidden {
+  display: none;
+}
