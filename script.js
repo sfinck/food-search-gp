@@ -29,6 +29,10 @@ $(document).ready(function () {
       var btn2 = document.getElementById('button2')
       var btn3 = document.getElementById('button3')
 
+      $('#button1').removeClass('hidden')
+      $('#button2').removeClass('hidden')
+      $('#button3').removeClass('hidden')
+
       btn1.addEventListener('click', function(){
         
         var id1 = response.location_suggestions[0].id
@@ -42,8 +46,36 @@ $(document).ready(function () {
           },
           success: function (response3) {
             console.log(response3);
+            var resultName1 = response3.restaurants[0].restaurant.name
+            var resultAddress1 = response3.restaurants[0].restaurant.location.address
+            var resultRating1 = response3.restaurants[0].restaurant.user_rating.aggregate_rating
+
+            var resultName2 = response3.restaurants[1].restaurant.name
+            var resultAddress2 = response3.restaurants[1].restaurant.location.address
+            var resultRating2= response3.restaurants[1].restaurant.user_rating.aggregate_rating
+
+            var resultName3 = response3.restaurants[2].restaurant.name
+            var resultAddress3 = response3.restaurants[2].restaurant.location.address
+            var resultRating3 = response3.restaurants[2].restaurant.user_rating.aggregate_rating
 
             
+
+            $('#res-1').removeClass('hidden')
+            $('#result1').text( resultName1);
+            $('#rating1').text(  'Review: ' + resultRating1 + ' out of 5');
+            $('#address1').text('Address: ' + resultAddress1);
+
+            $('#res-2').removeClass('hidden')
+            $('#result2').text( resultName2);
+            $('#rating2').text(  'Review: ' + resultRating2 + ' out of 5');
+            $('#address2').text('Address: ' + resultAddress2);
+
+            $('#res-3').removeClass('hidden')
+            $('#result3').text( resultName3);
+            $('#rating3').text(  'Review: ' + resultRating3 + ' out of 5');
+            $('#address3').text('Address: ' + resultAddress3);
+
+
           }
         })
       
@@ -62,6 +94,36 @@ $(document).ready(function () {
           },
           success: function (response3) {
             console.log(response3);
+
+            var resultName1 = response3.restaurants[0].restaurant.name
+            var resultAddress1 = response3.restaurants[0].restaurant.location.address
+            var resultRating1 = response3.restaurants[0].restaurant.user_rating.aggregate_rating
+
+            var resultName2 = response3.restaurants[1].restaurant.name
+            var resultAddress2 = response3.restaurants[1].restaurant.location.address
+            var resultRating2= response3.restaurants[1].restaurant.user_rating.aggregate_rating
+
+            var resultName3 = response3.restaurants[2].restaurant.name
+            var resultAddress3 = response3.restaurants[2].restaurant.location.address
+            var resultRating3 = response3.restaurants[2].restaurant.user_rating.aggregate_rating
+            
+          
+
+            $('#res-1').removeClass('hidden')
+            $('#result1').text( resultName1);
+            $('#rating1').text(  'Review: ' + resultRating1 + ' out of 5');
+            $('#address1').text('Address: ' + resultAddress1);
+
+            $('#res-2').removeClass('hidden')
+            $('#result2').text( resultName2);
+            $('#rating2').text(  'Review: ' + resultRating2 + ' out of 5');
+            $('#address2').text('Address: ' + resultAddress2);
+
+            $('#res-3').removeClass('hidden')
+            $('#result3').text( resultName3);
+            $('#rating3').text(  'Review: ' + resultRating3 + ' out of 5');
+            $('#address3').text('Address: ' + resultAddress3);
+
             
           }
         })
@@ -81,6 +143,37 @@ $(document).ready(function () {
           },
           success: function (response3) {
             console.log(response3);
+            
+            var resultName1 = response3.restaurants[0].restaurant.name
+            var resultAddress1 = response3.restaurants[0].restaurant.location.address
+            var resultRating1 = response3.restaurants[0].restaurant.user_rating.aggregate_rating
+
+            var resultName2 = response3.restaurants[1].restaurant.name
+            var resultAddress2 = response3.restaurants[1].restaurant.location.address
+            var resultRating2= response3.restaurants[1].restaurant.user_rating.aggregate_rating
+
+            var resultName3 = response3.restaurants[2].restaurant.name
+            var resultAddress3 = response3.restaurants[2].restaurant.location.address
+            var resultRating3 = response3.restaurants[2].restaurant.user_rating.aggregate_rating
+            
+            
+
+            $('#res-1').removeClass('hidden')
+            $('#result1').text( resultName1);
+            $('#rating1').text(  'Review: ' + resultRating1 + ' out of 5');
+            $('#address1').text('Address: ' + resultAddress1);
+
+            $('#res-2').removeClass('hidden')
+            $('#result2').text( resultName2);
+            $('#rating2').text(  'Review: ' + resultRating2 + ' out of 5');
+            $('#address2').text('Address: ' + resultAddress2);
+
+            $('#res-3').removeClass('hidden')
+            $('#result3').text( resultName3);
+            $('#rating3').text(  'Review: ' + resultRating3 + ' out of 5');
+            $('#address3').text('Address: ' + resultAddress3);
+            
+            
             
           }
         })
@@ -103,12 +196,15 @@ $(document).ready(function () {
       // console.log(response2.main.temp)
       // console.log(response2.weather[0].description)
       $('#tempEl').text('Temperature: ' + response2.main.temp)
-      $('#precEl').text('Precipitaion: ')
+      $('#feelsLikeEl').text('Feels Like: ' + response2.main.feels_like)
       $('#windEl').text('Wind: ' + response2.wind.speed)
       $('#cloudEl').text('Cloud Conditions: ' + response2.weather[0].description)
+
+
       
     },
   });
+  
   
 
 
@@ -121,6 +217,4 @@ $(document).ready(function () {
 
 });
 
-// create three buttons, grab names from api call, attatch event handlers for each button and when one is clicked it will do a api call for the city by the id
 
-// adding 'Did you mean?:' to the buttons div??
