@@ -10,7 +10,7 @@
 * WHEN I chose my desired location
 * THEN I am presented with three nearby restaurants including the restaurant name, rating and location
 * WHEN I view the current weather conditions for that city
-* THEN I am presented with the current temperature, wind, precipitation percentage and cloud condition
+* THEN I am presented with the current temperature, heat index, wind, and cloud condition
 ## Images
 
 The following image demonstrates the application functionality:
