@@ -8,9 +8,7 @@
 * WHEN I search for a city and state
 * THEN I am presented with three locations to choose from
 * WHEN I chose my desired location
-* THEN I am presented with three nearby restaurants including the restaurant name, website and location
-* WHEN I click the restaurant website link
-* THEN I am presented with the restaurants main website
+* THEN I am presented with three nearby restaurants including the restaurant name, rating and location
 * WHEN I view the current weather conditions for that city
 * THEN I am presented with the current temperature, wind, precipitation percentage and cloud condition
 ## Images
@@ -21,5 +19,13 @@ The following image demonstrates the application functionality:
 The following image displays the application wireframe:
 ![Screenshot (20)](https://user-images.githubusercontent.com/74476090/104820754-b382c900-57fc-11eb-8ba1-cb5f528263ad.png)
 ## API links
-https://developers.zomato.com/
-https://openweathermap.org/api
+
+* https://developers.zomato.com/
+* https://openweathermap.org/api
+
+
+* Repository:
+https://github.com/sfinck/food-search-gp
+
+* Deployed link:
+https://sfinck.github.io/food-search-gp/
