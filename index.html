@@ -10,19 +10,17 @@
   <title>Food Near Me</title>
 </head>
 
-<body class="grey lighten-5">
+<body>
 
 
- 
 
-    <!--header-->
-    <nav>
-      <div class="nav-extended navbar-fixed col s12" id="nav">
-        <div class="nav-wrapper">
-          <!-- <h3 class="brand-logo center">Find A Restaurant Near You</h3> -->
-          <br>
-  
-    </nav>
+
+  <!--header-->
+  <nav>
+    <div class="nav-extended navbar-fixed col s12" id="nav">
+      <div class="nav-wrapper">
+        <h3 class="brand-logo center">Food for Comfort</h3>
+  </nav>
 
   <main class="container center" id="main-container">
     <!--search bar-->
@@ -31,87 +29,98 @@
         <div class="row">
           <div class="input-field">
             <input id="input_text" type="text" placeholder="Enter city and state" data-length="10">
-            <a class="btn-floating btn-large waves-effect waves-light green" id="search-button"><i class="material-icons">GO!</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light green" id="search-button"><i
+                class="material-icons">GO!</i></a>
           </div>
         </div>
- <!--main section/search results-->
+        <!--main section/search results-->
         <div class="container" id="buttonDiv">
-          <button class = "hidden" id="button1" type="button">as</button>
-          <button class = "hidden" id="button2" type="button">as</button>
-          <button class = "hidden" id="button3" type="button">as</button>
+          <button class="hidden" id="button1" type="button">as</button>
+          <button class="hidden" id="button2" type="button">as</button>
+          <button class="hidden" id="button3" type="button">as</button>
         </div>
 
         <h5 class="hidden center white-text" id="resultsHeader"> Results </h5>
-        
-          <div class="row">
-            <div class="hidden card col s4 offset-s4" id="res-1">
-              <div class="card-image">
-                <ul><h6 id="result1"> </h6>
+
+        <div class="row">
+          <div class="hidden card col s4 offset-s4" id="res-1">
+            <div class="card-image">
+              <ul>
+                <h6 id="result1"> </h6>
                 <li id="rating1"></li>
-                  <li id="address1"></li>
+                <li id="address1"></li>
 
               </ul>
 
 
-                 <span class="card-title"></span>
-              </div>
-              <div class="card-content">
-                <p></p>
-              </div>
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <p></p>
             </div>
           </div>
+        </div>
     </div>
 
     <div class="row">
       <div class="hidden card col s4 offset-s4" id="res-2">
         <div class="card-image">
-          <ul><h6 id="result2"></h6>
-          <li id="rating2"></li>
-          <li id="address2"></li>
+          <ul>
+            <h6 id="result2"></h6>
+            <li id="rating2"></li>
+            <li id="address2"></li>
           </ul>
-           <span class="card-title"></span>
+          <span class="card-title"></span>
         </div>
         <div class="card-content">
-         
+
         </div>
       </div>
     </div>
-</div>
+    </div>
 
-<div class="row">
-  <div class="hidden card col s4 offset-s4" id="res-3">
-    <div class="card-image">
-      <ul><h6 id="result3"></h6>
-        <li id="rating3"></li>
-        <li id="address3"></li>
-      </ul>
-       <span class="card-title"></span>
+    <div class="row">
+      <div class="hidden card col s4 offset-s4" id="res-3">
+        <div class="card-image">
+          <ul>
+            <h6 id="result3"></h6>
+            <li id="rating3"></li>
+            <li id="address3"></li>
+          </ul>
+          <span class="card-title"></span>
+        </div>
+        <div class="card-content">
+          <p></p>
+        </div>
+      </div>
     </div>
-    <div class="card-content">
-      <p></p>
     </div>
-  </div>
-</div>
-</div>
-    
+
 
   </main>
 
   <footer class="page-footer" id="footer">
     <div class="container">
       <div class="row">
-        <div class="col l4 offset-l2 s12">
-          <!-- <h5 class="text-darken-3 left" id="currentCity">Current Weather</h5> -->
-          <img class="responsive-img" src="./assets/aiqxxKk7T.png" id="weather-image" alt="weather-picture">
-        </div>
-        <div class="col l4 s12">
-          <ul>
-            <li><h6 class="grey-text text-darken-3" id="tempEl"></h6></li>
-            <li><h6 class="grey-text text-darken-3" id="feelsLikeEl"></h6></li>
-            <li><h6 class="grey-text text-darken-3" id="windEl"></h6></li>
-            <li><h6 class="grey-text text-darken-3" id="cloudEl"></h6></li>
-        </div>
+        <h5 id="currentCity">View Current Weather Here</h5>
+        <!-- <img class="responsive-img" id="weather-image" alt="weather-picture"> -->
       </div>
+      <div id="temp-results">
+        <ul>
+          <li>
+            <h6 class="grey-text text-darken-3" id="tempEl"></h6>
+          </li>
+          <li>
+            <h6 class="grey-text text-darken-3" id="feelsLikeEl"></h6>
+          </li>
+          <li>
+            <h6 class="grey-text text-darken-3" id="windEl"></h6>
+          </li>
+          <li>
+            <h6 class="grey-text text-darken-3" id="cloudEl"></h6>
+          </li>
+      </div>
+    </div>
     </div>
   </footer>
 
