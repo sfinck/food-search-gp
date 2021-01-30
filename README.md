@@ -18,6 +18,13 @@ The following image demonstrates the application functionality:
 
 The following image displays the application wireframe:
 ![Screenshot (20)](https://user-images.githubusercontent.com/74476090/104820754-b382c900-57fc-11eb-8ba1-cb5f528263ad.png)
+
+Images of deployed site:
+
+<img width="1399" alt="Screen Shot 2021-01-29 at 10 34 39 PM" src="https://user-images.githubusercontent.com/73435380/106347327-3a1aba00-6283-11eb-8f4a-db41da04c2f3.png">
+<img width="1790" alt="Screen Shot 2021-01-29 at 10 35 09 PM" src="https://user-images.githubusercontent.com/73435380/106347322-3129e880-6283-11eb-9cb1-c5d40a262e74.png">
+
+
 ## API links
 
 * https://developers.zomato.com/
