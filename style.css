@@ -56,3 +56,7 @@
   border-color: black;
   image-rendering: crisp-edges;
 }
+
+::placeholder {
+  color: black;
+}
