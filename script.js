@@ -75,6 +75,10 @@ $(document).ready(function () {
               $('#rating3').text('Review: ' + resultRating3 + ' out of 5');
               $('#address3').text('Address: ' + resultAddress3);
 
+              $('#button1').addClass('hidden')
+              $('#button2').addClass('hidden')
+              $('#button3').addClass('hidden')
+
 
             }
           })
@@ -124,6 +128,10 @@ $(document).ready(function () {
               $('#rating3').text('Review: ' + resultRating3 + ' out of 5');
               $('#address3').text('Address: ' + resultAddress3);
 
+              $('#button1').addClass('hidden')
+              $('#button2').addClass('hidden')
+              $('#button3').addClass('hidden')
+
 
             }
           })
@@ -172,6 +180,10 @@ $(document).ready(function () {
               $('#result3').text(resultName3);
               $('#rating3').text('Review: ' + resultRating3 + ' out of 5');
               $('#address3').text('Address: ' + resultAddress3);
+
+              $('#button1').addClass('hidden')
+              $('#button2').addClass('hidden')
+              $('#button3').addClass('hidden')
 
 
 
